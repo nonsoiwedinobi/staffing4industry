@@ -1,0 +1,23 @@
+.specialties{
+    background: #E9ECEF;
+    margin-top: 3rem;
+}
+.specialties-center{
+    margin: 0 auto;
+    padding: 5rem 0;
+    
+    display: flex;
+    /* gap: 3rem 2rem; */
+}
+.specialties-title{
+    width: 30vw;
+}
+.specialties-info{
+    width: 50vw;
+}
+.specialties-text{
+    width: 30vw;
+}
+.specialties-img{
+    width: 50vw;
+}

@@ -1,0 +1,39 @@
+/* .efficiency {
+  background: grey;
+} */
+.efficiency-center {
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: flex;
+}
+.efficiency-info {
+  width: 50%;
+  padding: 0 1rem;
+}
+.efficiency-title {
+  width: 30vw;
+  font-size: 1.4rem;
+  font-weight: 1000;
+}
+.efficiency-text {
+  width: 30vw;
+  font-size: 28px;
+}
+.efficiency-description {
+  width: 28vw;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+.efficiency-img {
+  width: 50%;
+}
+.efficiency-btn {
+  padding: 8px 20px;
+  background: #ffc107;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.efficiency-btn:hover {
+  background: #e2ab06;
+}
