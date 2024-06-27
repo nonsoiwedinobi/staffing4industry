@@ -6,6 +6,7 @@ import Latest from "./components/Latest/Latest";
 import Solutions from "./components/Solutions/Solutions";
 import Efficiency from "./components/Efficiency/Efficiency";
 import Reviews from "./components/Reviews/Reviews";
+import Blog from "./components/Blog/Blog";
 import Footer from "./components/Footer/Footer";
 
 const App = () => {
@@ -32,6 +33,10 @@ const App = () => {
       <Reviews />
       <div className="container">
         <reviews-center />
+      </div>
+      <Blog />
+      <div className="container">
+        <blog-center />
       </div>
       <Footer />
     </div>
