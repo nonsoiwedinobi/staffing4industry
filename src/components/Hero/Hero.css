@@ -1,3 +1,6 @@
+/*Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /* Normalize CSS */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 
@@ -32,14 +35,14 @@
 }
 
 .hero-text h1 {
-  font-size: 3.75rem; /* Ensure correct unit is specified */
+  font-size: 3.75rem !important; 
   font-weight: 600;
 }
 
 .hero-text p {
   max-width: 700px;
   margin: 0.625rem auto 1.25rem;
-  line-height: 1.4;
+  line-height: 1.4 !important;
 }
 
 .hero-btn-1 {
