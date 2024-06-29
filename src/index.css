@@ -32,36 +32,13 @@ a{
   /* line-height: 1; */
   cursor: pointer;
 }
-img {
-  width: 100%;
-  display: block;
-}
-h1, h2, h3, h4 {
-  /* line-height: 1.25; */
-  margin-bottom: 0.75rem;
-}
-h1{
-  font-size: 3rem;
-}
-h2{
-  font-size: 2rem;
-}
-h3{
-  font-size: 1rem;
-}
-h4{
-  font-size: 0.875rem;
-}
 
 /* More globals */
 .btn {
-  /* text-transform: uppercase; */
-  background: var(--clr-white);
   color: #212121;
   padding: 10px 15px;
   font-size: 1rem;
   border: 0;
-  /* width: 10rem; */
   outline: 0;
   border-radius: 30px;
   cursor: pointer;
