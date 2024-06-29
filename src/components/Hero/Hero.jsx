@@ -1,6 +1,5 @@
-import React from 'react'
-import './Hero.css'
-import dark_arrow from '../../assets/dark-arrow.png'
+import React from "react";
+import "./Hero.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -24,6 +23,6 @@ const Hero = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Hero
+export default Hero;

@@ -1,3 +1,6 @@
+/* Normalize CSS */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
 /* Variables */
 :root{
   --clr-primary-2: hsl(42, 78%, 60%);
@@ -10,58 +13,67 @@
   --max-width: 1170px;
 }
 
-.hero{
-    width: 100%;
-    min-height: 100vh;
-    padding: 0 10%;
-    background: linear-gradient(rgba(42, 41, 48, 0.7), rgba(23, 23, 27, 0.7)), url('../../assets/hero-img.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 10%;
+  background: linear-gradient(rgba(42, 41, 48, 0.7), rgba(23, 23, 27, 0.7)), url('../../assets/hero-img.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.hero-text{
-    text-align: center;
-    max-width: 800px;
+
+.hero-text {
+  text-align: center;
+  max-width: 800px;
 }
-.hero-text h1{
-    font-size: 3.75;
-    font-weight: 600;
+
+.hero-text h1 {
+  font-size: 3.75rem; /* Ensure correct unit is specified */
+  font-weight: 600;
 }
-.hero-text p{
-    max-width: 700px;
-    margin: 0.625rem auto 1.25rem;
-    line-height: 1.4;
+
+.hero-text p {
+  max-width: 700px;
+  margin: 0.625rem auto 1.25rem;
+  line-height: 1.4;
 }
-.hero-btn-1{
-    margin-right: 1rem;
-    width: 10rem;
-    background: #358bca!important;
-    color: var(--clr-white)!important;
+
+.hero-btn-1 {
+  margin-right: 1rem;
+  width: 10rem;
+  background: #358bca !important;
+  color: var(--clr-white) !important;
 }
-.hero-btn-2{
-    margin-right: 1rem;
-    width: 10rem;
-    background: #FFC107!important;
-    color: #000!important;
+
+.hero-btn-2 {
+  margin-right: 1rem;
+  width: 10rem;
+  background: #FFC107 !important;
+  color: #000 !important;
 }
-.hero-btn-1 .fa-arrow-right{
-    color: var(--clr-white)!important;
-    margin-left: 8px;
+
+.hero-btn-1 .fa-arrow-right {
+  color: var(--clr-white) !important;
+  margin-left: 8px;
 }
-.hero-btn-1:hover{
-    background: #2b7bb5!important;
+
+.hero-btn-1:hover {
+  background: #2b7bb5 !important;
 }
-.hero-btn-2 .fa-arrow-right{
-    margin-left: 8px;
+
+.hero-btn-2 .fa-arrow-right {
+  margin-left: 8px;
 }
-.hero-btn-2:hover{
-    background: #e2ab06!important;
+
+.hero-btn-2:hover {
+  background: #e2ab06 !important;
 }
-.btn img{
+
+.btn img {
   width: 20px;
   margin-left: 10px;
-
 }
