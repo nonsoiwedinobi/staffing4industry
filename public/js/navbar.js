@@ -94,7 +94,7 @@ async function translateText(text, targetLanguage) {
 // Translate the entire page based on the selected language
 async function translatePage(targetLanguage) {
   const elementsToTranslate = document.querySelectorAll(
-    "nav a, .submit-btn a, .logo, .hero-text h1, .hero-text p, .hero-btn-1, .hero-btn-2, .specialties-title, .specialties-text, .efficiency-title, .efficiency-text, .efficiency-description, .efficiency-btn, .main-title, .reviews-text, .reviewer-name, .reviewer-title, .blog-title, .blog-text, .solutions h2, .solutions p, .solutions-text, .solutions-text-2, .solution-card h4, .solution-card p, .solutions-btn, .callback-section h2, .callback-section p, .callback-form label, .callback-btn, .footer h3, .footer p, .footer ul li a, .footer-copy"
+    "nav a, .submit-btn a, .logo, .hero-text h1, .hero-text p, .hero-btn-1, .hero-btn-2, .specialties-title, .specialties-text, .efficiency-title, .efficiency-text, .efficiency-description, .efficiency-btn, .main-title, .reviews-text, .reviewer-name, .reviewer-title, .blog-title, .blog-text, .job a .solutions h2, .solutions p, .solutions-text, .solutions-text-2, .solution-card h4, .solution-card p, .solutions-btn, .callback-section h2, .callback-section p, .callback-form label, .callback-btn, .footer h3, .footer p, .footer ul li a, .footer-copy"
   );
 
   for (let element of elementsToTranslate) {
