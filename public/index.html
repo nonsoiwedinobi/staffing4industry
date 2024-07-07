@@ -11,14 +11,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Staffing4Industry</title>
   </head>
   <body>
     <!-- Navbar -->
 <nav class="navbar scrolled" id="navbar">
   <div class="nav-header">
-    <h2 class="logo">Staffing4Industry</h2>
+    <h2 class="logo no-translate">Staffing4Industry</h2>
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="jobs.html">Jobs</a></li>
@@ -28,14 +29,15 @@
       <button class="btn submit-btn"><a href="#">Submit Resume</a></button>
       <div class="language-selector">
         <button class="lang-btn" id="lang-btn">
-          <img src="./assets/England.png" alt="English" class="flag-icon"> English
-          <span id="arrow-icon" class="arrow-icon">&#9660;</span>
-        </button>
-        <ul class="dropdown" id="language-dropdown">
-          <li><img src="./assets/England.png" alt="English" class="flag-icon"> English</li>
-          <li><img src="./assets/France.png" alt="French" class="flag-icon"> French</li>
-          <li><img src="./assets/Netherland.png" alt="Dutch" class="flag-icon"> Dutch</li>
-        </ul>
+  <img src="./assets/England.png" alt="English" class="flag-icon"> English
+  <span id="arrow-icon" class="arrow-icon">&#9660;</span>
+</button>
+<ul class="dropdown" id="language-dropdown">
+  <li data-lang="en"><img src="./assets/England.png" alt="English" class="flag-icon"> English</li>
+  <li data-lang="fr"><img src="./assets/France.png" alt="French" class="flag-icon"> French</li>
+  <li data-lang="nl"><img src="./assets/Netherland.png" alt="Dutch" class="flag-icon"> Dutch</li>
+</ul>
+
       </div>
     </ul>
     <div class="toggle_btn" id="toggle_btn">
@@ -44,7 +46,6 @@
   </div>
 </nav>
     <!-- End of navbar -->
-     
 
     <!-- Hero -->
     <div class="hero container">
@@ -69,7 +70,7 @@
 
     <!-- Specialty Section -->
     <section class="specialties section">
-      <h2 class="section-head">What We Offer</h2>
+      <h2 class="section-head main-title">What We Offer</h2>
       <div class="specialties-center container">
         <article class="specialties-info">
           <h2 class="section-title specialties-title">
@@ -94,7 +95,7 @@
     <!-- Latest jobs section -->
     <section class="latest section">
       <div class="latest-jobs-center container">
-        <h2 class="latest-text">Latest jobs</h2>
+        <h2 class="latest-text main-title">Latest jobs</h2>
         <div class="jobs">
           <div class="job">
             <div class="job-content">
@@ -194,7 +195,7 @@
     <!-- Solutions -->
     <section class="solutions section">
       <div class="solutions-center container">
-        <h2>Solutions</h2>
+        <h2 class="main-title">Solutions</h2>
         <p class="solutions-text">
           Why Choose Staffing4Industry for Your Recruitment Needs
         </p>
@@ -241,7 +242,7 @@
     <div class="efficiency section">
     <div class="efficiency-center container">
       <article class="efficiency-info">
-        <h2 class="section-title efficiency-title">Efficiency</h2>
+        <h2 class="section-title efficiency-title main-title">Efficiency</h2>
         <h3 class="efficiency-text">
           Unlocking Potential, Driving Success for Businesses
         </h3>
@@ -298,8 +299,8 @@
 
     <!-- Blog section -->
     <div class="blog-section blog-center container">
-        <h4>Our Blog</h4>
-        <h2>Latest articles</h2>
+        <h4 class="main-title">Our Blog</h4>
+        <h2 class="main-title">Latest articles</h2>
         <div class="blog-posts">
             <div class="blog-post">
                 <div class="blog-image">
@@ -356,7 +357,7 @@
     <!-- Request a Call Back Section -->
     <section class="callback-section" id="callback-section">
         <div class="container">
-            <h2>Request a Call Back</h2>
+            <h2 class="main-title">Request a Call Back</h2>
             <p>Please fill out the form below and we will get back to you as soon as possible.</p>
             <form class="callback-form" id="callback-form">
                 <div class="form-group">
@@ -381,7 +382,7 @@
     <footer class="footer section">
     <div class="footer-center container">
         <div class="footer-left">
-            <h3 class="footer-logo">Staffing4Industry</h3>
+            <h3 class="footer-logo no-translate">Staffing4Industry</h3>
             <p>Location: </p>
             <p class="footer-address">
                 Mercatorstraat 132, 2018 , Antwerpen, Belgium
