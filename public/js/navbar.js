@@ -1,5 +1,3 @@
-// public/js/navbar.js
-
 document.addEventListener("DOMContentLoaded", function () {
   const toggleBtn = document.getElementById("toggle_btn");
   const navLinks = document.getElementById("nav-links");
@@ -76,33 +74,31 @@ document.addEventListener("DOMContentLoaded", function () {
 // Translation function for Netlify function implementation
 async function translateText(text, targetLanguage) {
   try {
-    console.log('Sending text for translation:', text, 'to', targetLanguage);
-    const response = await fetch('/.netlify/functions/translate', {
-      method: 'POST',
+    console.log("Sending text for translation:", text, "to", targetLanguage);
+    const response = await fetch("/.netlify/functions/translate", {
+      method: "POST",
       body: JSON.stringify({ text, targetLanguage }),
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
     });
     const data = await response.json();
-    console.log('Received translated text:', data.translatedText);
+    console.log("Received translated text:", data.translatedText);
     return data.translatedText;
   } catch (error) {
-    console.error('Error:', error);
+    console.error("Error:", error);
     return text;
   }
 }
 
-
 // Translate the entire page based on the selected language
 async function translatePage(targetLanguage) {
   const elementsToTranslate = document.querySelectorAll(
-    "nav a, .submit-btn a, .logo, .hero, button, .hero-text h1, .hero-btn-1, .hero-btn-2, .btn, .job .hero-text p, .specialties-title, .specialties-text, .efficiency-title, .efficiency-text, .efficiency-description, .efficiency-btn, .main-title, .reviews-text, .reviewer-name, .reviewer-title, .blog-title, .blog-text, .solutions h2, .solutions p, .solutions-text, .solutions-text-2, .solution-card h4, .solution-card p, .solutions-btn, .callback-section h2, .callback-section p, .callback-form label, .callback-btn, .footer h3, .footer p, .footer ul li a, .footer-copy"
+    "nav a, .submit-btn a, .logo, .hero-text h1, .hero-text p, .hero-btn-1, .hero-btn-2, .specialties-title, .specialties-text, .efficiency-title, .efficiency-text, .efficiency-description, .efficiency-btn, .main-title, .reviews-text, .reviewer-name, .reviewer-title, .blog-title, .blog-text, .solutions h2, .solutions p, .solutions-text, .solutions-text-2, .solution-card h4, .solution-card p, .solutions-btn, .callback-section h2, .callback-section p, .callback-form label, .callback-btn, .footer h3, .footer p, .footer ul li a, .footer-copy"
   );
 
   for (let element of elementsToTranslate) {
     if (!element.classList.contains("no-translate")) {
-      // Skip elements with the no-translate class
       const originalText = element.textContent.trim();
       if (originalText) {
         const translatedText = await translateText(
